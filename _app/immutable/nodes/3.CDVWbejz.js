@@ -1,0 +1,1 @@
+import{t as a,a as e}from"../chunks/DyZHAkUR.js";import"../chunks/By2jhdSc.js";import{j as s}from"../chunks/QLT4NtoI.js";import{P as p}from"../chunks/BUpxeXVu.js";var n=a('<h1 class="svelte-1hh4lg0">Projects</h1> <p>Coming soon.</p>',1);function g(o){p(o,{children:(t,m)=>{var r=n();s(2),e(t,r)},$$slots:{default:!0}})}export{g as component};
