@@ -13,7 +13,7 @@ export default function Home() {
         </p>
 
         <p>
-          I previously completed my Bachelor's in Computer Science and Molecular Biology (2023) and my Master's in Computer Science and Engineering (2024), where I worked with <a href="https://www.keatinglab.mit.edu/people" target="_blank">Amy Keating</a>, <a href="https://www.carolineuhler.com/" target="_blank">Caroline Uhler</a>, and <a href="https://medicine.yale.edu/profile/salil-garg/" target="_blank">Salil Garg</a>. Outside of work, I like to rock climb, play and watch basketball (go Knicks!), and read.
+          I previously completed my Bachelor's in Computer Science and Molecular Biology (2023) and my Master's in Computer Science and Engineering (2024) at the Massachusetts Institute of Technology, where I worked with <a href="https://www.keatinglab.mit.edu/people" target="_blank">Amy Keating</a>, <a href="https://www.carolineuhler.com/" target="_blank">Caroline Uhler</a>, and <a href="https://medicine.yale.edu/profile/salil-garg/" target="_blank">Salil Garg</a>. Outside of work, I like to rock climb, play and watch basketball (go Knicks!), and read.
         </p>
 
         <p>
