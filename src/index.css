@@ -1,0 +1,134 @@
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #ffffff;
+  color: #000000;
+}
+
+/* ===== HEADER ===== */
+.nav {
+  width: 100%;
+  padding: 2rem 2rem;
+
+  display: flex;
+  justify-content: flex-end;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.05rem;
+  font-weight: 300;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.nav .active {
+  font-weight: 500;
+}
+
+/* ===== MAIN LAYOUT ===== */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== HOME CONTENT ===== */
+.text {
+  max-width: 700px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  font-weight: 300;
+}
+
+/* ===== IMAGE ===== */
+.image-wrapper {
+  float: right;
+  width: 300px;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== LIST ===== */
+ul {
+  list-style-type: none;
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
+
+/* ===== BUTTON ===== */
+button.toggle {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  background: #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button.toggle:hover {
+  background: #aaa;
+}
+
+/* ===== FLOAT FIX ===== */
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ===== PAGE CONTAINER ===== */
+.page-container h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== CHECKLIST ===== */
+.checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.checklist li {
+  margin-bottom: 0.4rem;
+}
+
+.checklist input {
+  margin-right: 0.5rem;
+  accent-color: black;
+}
+
+.checklist input:disabled {
+  opacity: 1;
+  cursor: default;
+}
