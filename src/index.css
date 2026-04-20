@@ -115,6 +115,10 @@ button.toggle:hover {
   margin-bottom: 0.4rem;
 }
 
+.checklist label {
+  font-weight: 300;
+}
+
 .checklist input {
   margin-right: 0.5rem;
   accent-color: black;
