@@ -1,19 +1,15 @@
 export default function Home() {
   return (
     <div className="container">
-      <div className="image-wrapper">
-        <img src="/nten-image.jpeg" alt="Nten Nyiam" />
-      </div>
-
       <div className="text">
         <h1>Nten Nyiam</h1>
 
         <p>
-          I'm currently a software engineer at <a href="https://www.hadrius.com/" target="_blank">Hadrius</a>, where I broadly work on tooling to check marketing materials to make sure they follow laws and compliance regulations before they are published or distributed. I previously worked at <a href="https://www.silnahealth.com/" target="_blank">Silna Health</a> and <a href="https://ramp.com/" target="_blank">Ramp</a>.
+          I'm currently a software engineer at <a href="https://www.hadrius.com/" target="_blank">Hadrius</a>, where I build tooling to review marketing materials for legal and regulatory compliance. I previously worked at <a href="https://www.silnahealth.com/" target="_blank">Silna Health</a> and <a href="https://ramp.com/" target="_blank">Ramp</a>.
         </p>
 
         <p>
-          I previously completed my Bachelor's in Computer Science and Molecular Biology (2023) and my Master's in Computer Science and Engineering (2024) at the Massachusetts Institute of Technology, where I worked with <a href="https://www.keatinglab.mit.edu/people" target="_blank">Amy Keating</a>, <a href="https://www.carolineuhler.com/" target="_blank">Caroline Uhler</a>, and <a href="https://medicine.yale.edu/profile/salil-garg/" target="_blank">Salil Garg</a>. Outside of work, I like to rock climb, play and watch basketball (go Knicks!), and read.
+          I earned a B.S in Computer Science and Molecular Biology (2023) and an M.Eng in Computer Science and Engineering (2024) from the Massachusetts Institute of Technology, where I worked with <a href="https://www.keatinglab.mit.edu/people" target="_blank">Amy Keating</a>, <a href="https://www.carolineuhler.com/" target="_blank">Caroline Uhler</a>, and <a href="https://medicine.yale.edu/profile/salil-garg/" target="_blank">Salil Garg</a>. Outside of work, I enjoy rock climbing, playing and watching basketball (go Knicks!), and reading.
         </p>
 
         <p>
@@ -30,7 +26,7 @@ export default function Home() {
 
           <li>
             <label>
-              <input type="checkbox" disabled />
+              <input type="checkbox" checked disabled />
               Links to GitHub, LinkedIn, etc.
             </label>
           </li>
