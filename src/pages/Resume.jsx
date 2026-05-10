@@ -188,7 +188,7 @@ export default function Resume() {
         {showRamp && (
           <ul>
             <li>Developed a check name verification system to counter check washing fraud, processing hundreds of checks per day and improving verification accuracy from ~90% to 99.5%.</li>
-            <li>Built a large portion of the backed for Ramp Business Accounts, specifcally allowing pushing and pulling via ACH Credit, Wire, or Rela Time Payment.</li>
+            <li>Built a large portion of the backed for Ramp Business Accounts, specifcally allowing pushing and pulling via ACH Credit, Wire, or Real Time Payment.</li>
             <li>Built out real-time check tracking by surfacing status and location transitions to users as they occured.</li>
             <li>Developed an automated balance top-up system for delinquent accounts, using Celery to schedule daily asynchronous balance replenishment worflows.</li>
           </ul>
