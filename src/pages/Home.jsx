@@ -36,29 +36,22 @@ export default function Home() {
 
             <li>
               <label>
-                <input type="checkbox" disabled />
-                Resume page / downloadable resume
+                <input type="checkbox" checked disabled />
+                Resume page
               </label>
             </li>
 
             <li>
               <label>
                 <input type="checkbox" disabled />
-                Timeline/experience section (stretch goal)
+                Blog (no longer a stretch goal)
               </label>
             </li>
 
             <li>
               <label>
-                <input type="checkbox" disabled />
-                Blog (stretch goal)
-              </label>
-            </li>
-
-            <li>
-              <label>
-                <input type="checkbox" disabled />
-                Component transitions/animations
+                <input type="checkbox" checked disabled />
+                Component transitions/animations (small in scale, but still present)
               </label>
             </li>
           </ul>
