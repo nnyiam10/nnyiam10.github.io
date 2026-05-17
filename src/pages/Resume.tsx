@@ -88,9 +88,8 @@ export default function Resume() {
   
   return (
     <PageContainer>
-      <h2 className='resume-category'>Work Experience</h2>
+      <h2 className='resume-category work-title'>Work Experience</h2>
       <Timeline />
-      {/* <h2 className="resume-category">Education</h2> */}
     </PageContainer>
   )
 }

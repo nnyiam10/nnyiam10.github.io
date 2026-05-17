@@ -56,25 +56,41 @@ export default function Timeline() {
                     {job.company}
 
                     {job.internship && ' (intern)'}
-                  </div>
+                </div>
 
-                <Link
-                  to={`/resume/${job.id}`}
-                  className="timeline-row"
-                >
-                  <img
-                      src={job.logo}
-                      alt={job.company}
-                      className="timeline-logo"
-                  />
+                <div className='timeline-hover-wrapper'>
+                  <div className='timeline-tooltip'>
+                    <div className='tooltip-role'>
+                      {job.role}
+                    </div>
 
-                  <div
-                    className="timeline-bar"
-                    style={{
-                        background:job.color
-                    }}
-                  />
-                </Link>
+                    <div>
+                      {job.city}
+                    </div>
+
+                    <div>
+                      {job.dateLabel}
+                    </div>
+                  </div> 
+
+                  <Link
+                    to={`/resume/${job.id}`}
+                    className="timeline-row"
+                  >
+                    <img
+                        src={job.logo}
+                        alt={job.company}
+                        className="timeline-logo"
+                    />
+
+                    <div
+                      className="timeline-bar"
+                      style={{
+                          background:job.color
+                      }}
+                    />
+                  </Link>
+                </div>
               </div>
             )
           })}
