@@ -1,3 +1,30 @@
+import type { FormEvent } from 'react'
+
+interface Problem {
+  question: string
+  answer: number
+}
+
+interface ResumeGateProps {
+  input: string
+
+  setInput: React.Dispatch<
+    React.SetStateAction<string>
+  >
+
+  incorrect: boolean
+
+  setIncorrect: React.Dispatch<
+    React.SetStateAction<boolean>
+  >
+
+  handleSubmit: (
+    e: FormEvent<HTMLFormElement>
+  ) => void
+
+  problem: Problem
+}
+
 export default function ResumeGate({
   input,
   setInput,
@@ -5,7 +32,7 @@ export default function ResumeGate({
   setIncorrect,
   handleSubmit,
   problem
-}) {
+}: ResumeGateProps) {
   return (
     <div className="resume-gate">
       <p className="resume-gate-description">
