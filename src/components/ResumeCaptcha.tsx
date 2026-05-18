@@ -20,10 +20,6 @@ export default function ResumeCaptcha({
 
     return (
         <div className="resume-gate">
-            <p className="resume-gate-description">
-                Please verify to proceed.
-            </p>
-
             <Turnstile
               sitekey="0x4AAAAAADRbgNiYgLyUlDrJ"
               onSuccess={handleSuccess}
