@@ -84,30 +84,6 @@ li {
   margin-bottom: 0.5rem;
 }
 
-/* ===== CHECKLIST ===== */
-.checklist {
-  list-style: none;
-  padding-left: 0;
-}
-
-.checklist li {
-  margin-bottom: 0.4rem;
-}
-
-.checklist label {
-  font-weight: 300;
-}
-
-.checklist input {
-  margin-right: 0.5rem;
-  accent-color: black;
-}
-
-.checklist input:disabled {
-  opacity: 1;
-  cursor: default;
-}
-
 .resume-category {
   margin-top: 4rem;
   margin-bottom: 2rem;
@@ -123,134 +99,68 @@ li {
   gap: 1rem;
 }
 
-/* ===== TIMELINE ===== */
-.timeline {
-  position: relative;
-  height: 420px;
-  margin-top: 3rem;
-  border-bottom: 1px solid #ddd;
+/* ===== WORK EXPERIENCE ===== */
+.experience-list {
+  border-top: 1px solid #ddd;
 }
 
-.timeline-item {
-  position: absolute;
-}
-
-.timeline-company {
-  position: absolute;
-  width: 100%;
-  top: -20px;
-  text-align: center;
-  font-size: 0.78rem;
-  font-weight: 500;
-  color: #555;
-  white-space: nowrap;
-}
-
-.timeline-row {
+.experience-row {
   display: flex;
   align-items: center;
-  gap: 8px;
-  text-decoration: none;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid #ddd;
   color: inherit;
+  text-decoration: none;
+  transition: padding 180ms ease, background-color 180ms ease;
 }
 
-.timeline-row:hover .timeline-bar {
-  transform: scale(1.04);
-  opacity: 0.92;
+.experience-row:hover,
+.experience-row:focus-visible {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  background: #fafafa;
 }
 
-.timeline-logo {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-  flex-shrink: 0;
+.experience-row:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
 }
 
-.timeline-bar {
-  display: block;
-  height: 28px;
-  border-radius: 8px;
-  flex: 1;
-  min-width: 40px;
-}
-
-.timeline-gridline {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background: #e5e5e5;
-}
-
-.timeline-gridline span {
-  position: absolute;
-  top: 100%;
-  transform: translateX(-50%);
-  margin-top: 10px;
-  color: #666;
-  font-size: 0.9rem;
-}
-
-.timeline-note {
-  margin-top: 4rem;
-  text-align: center;
-  color: #888;
-  font-size: 0.9rem;
-  font-weight: 300;
-}
-
-.timeline-axis-label {
-  position: absolute;
-  left: -120px;
-  top: 50%;
-  transform: translateY(-50%) rotate(-90deg);
-  transform-origin: center;
-  color: #666;
-  font-size: 1.05rem;
-  font-weight: 400;
-  white-space: nowrap;
-}
-
-.timeline-wrapper {
-  width: 150%;
-  margin-left: -25%;
-}
-
-.work-title {
-  position: relative;
-  left: -150px;
-}
-
-.timeline-hover-wrapper {
-  position: relative;
-}
-
-.timeline-tooltip {
-  position: absolute;
-  bottom: 115%;
-  left: 50%;
-  transform: translateX(-50%) translateY(8px);
-  background: white;
-  border: 1px solid #e5e5e5;
-  border-radius: 10px;
-  padding: 0.7rem 0.9rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  font-size: 0.78rem;
-  min-width: 160px;
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.2s;
-  z-index: 50;
-}
-
-.timeline-hover-wrapper:hover .timeline-tooltip {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-}
-
-.tooltip-role {
+.experience-details h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.15rem;
   font-weight: 600;
-  margin-bottom: 0.3rem;
+}
+
+.experience-date,
+.experience-company {
+  margin: 0;
+}
+
+.experience-date {
+  margin-bottom: 0.45rem;
+  color: #555;
+  font-size: 0.92rem;
+  font-style: italic;
+}
+
+.experience-company {
+  font-size: 0.95rem;
+}
+
+.experience-arrow {
+  flex-shrink: 0;
+  color: #777;
+  font-size: 1.25rem;
+  transition: transform 180ms ease, color 180ms ease;
+}
+
+.experience-row:hover .experience-arrow,
+.experience-row:focus-visible .experience-arrow {
+  color: #111;
+  transform: translateX(4px);
 }
 
 /* ===== JOB PAGE ===== */

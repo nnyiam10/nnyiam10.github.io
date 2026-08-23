@@ -1,6 +1,6 @@
 import PageContainer from '../components/PageContainer'
 import ResumeCaptcha from '../components/ResumeCaptcha'
-import Timeline from '../components/Timeline'
+import ExperienceList from '../components/ExperienceList'
 
 import { useState } from 'react'
 
@@ -22,8 +22,8 @@ export default function Resume() {
   
   return (
     <PageContainer>
-      <h2 className='resume-category work-title'>Work Experience</h2>
-      <Timeline />
+      <h2 className='resume-category'>Work Experience</h2>
+      <ExperienceList />
     </PageContainer>
   )
 }
