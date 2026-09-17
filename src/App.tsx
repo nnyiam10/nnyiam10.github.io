@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Header from './components/Header'
 import Home from './pages/Home'
-import Projects from './pages/Projects'
 import Resume from './pages/Resume'
 import JobPage from './pages/JobPage'
 
@@ -9,7 +8,6 @@ import { useEffect } from 'react'
 
 const titles: Record<string, string> = {
   '/': 'Nten Nyiam',
-  '/projects': 'Projects | Nten Nyiam',
   '/resume': 'Resume | Nten Nyiam'
 }
 
@@ -41,7 +39,6 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
 
           <Route

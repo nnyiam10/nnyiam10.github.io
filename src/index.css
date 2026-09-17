@@ -91,14 +91,6 @@ li {
   font-weight: 600;
 }
 
-/* ===== RESUME GATE ===== */
-.resume-gate {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
 /* ===== WORK EXPERIENCE ===== */
 .experience-list {
   border-top: 1px solid #ddd;

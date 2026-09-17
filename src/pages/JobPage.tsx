@@ -1,4 +1,4 @@
-import { Link, Navigate, useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import jobs from '../data/jobs'
 
 import PageContainer
@@ -6,17 +6,6 @@ from '../components/PageContainer'
 
 export default function JobPage(){
   const { jobId } = useParams()
-
-  const authorized = 
-    sessionStorage.getItem(
-        'resumeAuthorized'
-    ) === 'true'
-
-  if (!authorized) {
-    return (
-        <Navigate to="/resume"/>
-    )
-  }
   
   const job=jobs.find(
       j=>j.id===jobId
