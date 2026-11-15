@@ -39,13 +39,12 @@ export default function JobPage(){
       <div className='job-header'>
         <div>
           <h1 className='job-company'>
-            <img
-              src={job.logo}
-              alt={job.company}
-              className='job-company-logo-inline'
-            />
             {job.company}
           </h1>
+
+          <p className='job-role'>
+            {job.role}
+          </p>
 
           <p className='job-subtitle'>
             {job.city}
@@ -89,10 +88,6 @@ export default function JobPage(){
       </h2>
 
       <div className='job-card'>
-        <h3>
-          {job.role}
-        </h3>
-
         <div
           className='tech-stack'  
         >
